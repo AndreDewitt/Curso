@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Validar Inputs</title>
+  </head>
+  <body>
+    <form class="" action="#" method="post">
+      <!--Para validar datos en un input se pueden usar vrios parametros
+        para dejar en claro que debe ingresar y que es obligatorio-->
+      <label for="Numeros">Numeros</label>
+      <input type="text" name="Numeros" required pattern="[0-9]+">
+      <br>
+      <!--Lo mismo pero con letras y ademas se agrego un maximo
+        y un minimo al largo de lo que se puede escribir-->
+      <label for="letras">Letras</label>
+      <input maxlength="10" minlength="4" type="text" name="letras" required pattern="[a-zA-z]+">
+      <br>
+      <button >Enviar</button>
+    </form>
+
+  </body>
+</html>
